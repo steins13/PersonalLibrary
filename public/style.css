@@ -1,34 +1,72 @@
-.border {
-  border-style: solid;
-  border-width: 1px;
-  margin: 10px;
+#title {
+  font-family: monospace;
+  margin: auto;
+  width: 900px;
+  height: 240px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+
+#body {
+  background-color: whitesmoke;
+}
+
+#newBookForm {
+  text-align: center;
+  margin: auto;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  background-color: #ebe9e9f1;
 }
 
 #sampleui {
-  max-width: 450px;
-  margin-left: 5%;
-  height: 100%;
-}
-
-#sampleposting {
-  max-width: 450px;
+  width: 1200px;
+  margin: auto;
   text-align: center;
-  margin-left: 5%;
 }
 
-#userstories {
-  margin-left: 5%;
+#formTitle{
+  font-family: monospace;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-form {
-  padding: 5px;
+#bookTitleToAdd {
+  margin-bottom: 20px;
 }
 
-label {
+#newBook {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+#display {
+}
+
+#box2 {
+  width: 800px;
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+#bookDetail {
   display: block;
-  font-weight: bold;
-}
-
-input {
-  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
 }

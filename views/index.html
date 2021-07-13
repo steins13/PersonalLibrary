@@ -6,48 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/public/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@76.5,349&display=swap" rel="stylesheet">
   <style>
     code {
       background-color: whitesmoke;
     }
   </style>
 </head>
-<body>
-<header>
-  <h1>Personal Library</h1>
+<body class="container container-fluid" id="body">
+<header id="titleHeader">
+  <h1 id="title">Personal Library</h1>
 </header>
 <br>
-<div id ='sampleposting'>
-  <h2 style="text-align: left">Test API responses</h2>
-  <form action="/api/books" method="post" class="border">
-    <h4>Test post to /api/books</h4>
-    <label for="title" >Book Title</label>
-    <input type="text" id="title" name="title" value=""><br>
-    <input type="submit" value="Submit">
+<div id='sampleui' id="form">
+  <form id="newBookForm" class="form-control row">
+    <label for="bookTitleToAdd" class="btn navbar align-center" id="formTitle">New Book Title</label>
+    <input type="text" id="bookTitleToAdd" name="title" placeholder="Moby Dick" style="width: 295px" class="form-control-lg btn-outline">
+    <button type="submit" value="Submit" id="newBook" class="btn btn-secondary">Submit New Book!</button>
   </form>
-  <form action="" method="post" id="commentTest" class="border">
-    <h4>Test post to /api/books/{bookid}</h4>
-    <label for="idinputtest">BookId to comment on</label>
-    <input type="text" name="id" value="" id="idinputtest"><br>
-    <label for="comment">Comment</label>
-    <input type="text" id="comment" name="comment" value=""><br>
-    <input type="submit" value="Submit">
-  </form>
-</div>
-<hr style='margin: 50px'>
-<div id='sampleui'>
-  <h2 style="text-align: left">Sample Front-End</h2>
-  <form id="newBookForm" class="border">
-    <label for="bookTitleToAdd">New Book Title</label>
-    <input type="text" id="bookTitleToAdd" name="title" placeholder="Moby Dick" style="width: 295px">
-    <button type="submit" value="Submit" id="newBook">Submit New Book!</button>
-  </form>
-  <div id='display'></div>
-  <div id='bookDetail' class='border'>
-    <p id='detailTitle'>Select a book to see it's details and comments</p>
-    <ol id='detailComments'></ol>
+  <div class="row" id="box2">
+    <div id='display' class="col-6"></div>
+    <div id='bookDetail' class="col-6">
+      <p id='detailTitle'>Select a book to see it's details and comments</p>
+      <ol id='detailComments' class="btn"></ol>
+    </div>
   </div>
-  <button id='deleteAllBooks'>Delete all books...</button>
+  <button id='deleteAllBooks' class="btn btn-danger">Delete all books...</button>
 </div>
 <hr style='margin: 50px'>
 
@@ -66,5 +53,6 @@
     });
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
